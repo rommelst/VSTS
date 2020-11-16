@@ -16,6 +16,10 @@ steps:
     workingDirectory: build
 
 - script:
+    cd build; make
+  displayName: 'Compile & link'
+
+- script:
     echo "Assembly"
   displayName: 'Assembly'
 
