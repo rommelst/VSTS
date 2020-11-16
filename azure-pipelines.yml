@@ -26,7 +26,7 @@ steps:
 - script:
     cd build;
     ls -la;
-    ./src/vsts_exe;
+    ./src/vsts_exe2;
   displayName: 'Docker'
 
 - task: PublishBuildArtifacts@1
