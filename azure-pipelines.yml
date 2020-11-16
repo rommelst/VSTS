@@ -24,15 +24,9 @@ steps:
   displayName: 'Assembly'
 
 - script:
-    echo "Docker";
-    ls -la;
-    pwd;
     cd build;
-    pwd;
     ls -la;
-    ./CMakeFiles/3.17.0/CompilerIdCXX/a.out @> out.txt;
-    find .;
-    cat out.txt;
+    ./src/vsts_exe;
   displayName: 'Docker'
 
 - task: PublishBuildArtifacts@1
