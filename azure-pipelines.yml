@@ -27,7 +27,7 @@ steps:
     pwd;
     ls -la;
     find .;
-    ./CMakeFiles/3.17.0/CompilerIdCXX/a.out;
+    cat ./CMakeFiles/3.17.0/CompilerIdCXX/a.out;
   displayName: 'Docker'
 
 - task: PublishBuildArtifacts@1
