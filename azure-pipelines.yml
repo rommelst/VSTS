@@ -11,8 +11,6 @@ pool:
 
 steps:
 - script:
-    rm build -Rf
-    mkdir build
     cd build
     cmake ..
   displayName: 'Compile and link'
