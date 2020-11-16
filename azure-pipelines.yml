@@ -25,7 +25,6 @@ steps:
 
 - script:
     cd build;
-    ls -la;
     ./src/vsts_exe > out.txt;
     cat out.txt;
   displayName: 'Docker'
