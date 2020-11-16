@@ -24,6 +24,10 @@ steps:
     cmake ..
   displayName: 'Compile and link'
 
+- task: CMake@1
+  inputs:
+    cmakeArgs: 
+
 - script: |
     echo "Assembly"
   displayName: 'Assembly'
@@ -38,4 +42,3 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
-- 
