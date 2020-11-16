@@ -16,6 +16,7 @@ steps:
 
 - script:
     docker pull srzzumix/googletest;
+    docker run srzzumix/googletest:latest;
     docker ps -a;
   displayName: 'docker pull google test'
 
