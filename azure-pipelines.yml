@@ -24,7 +24,9 @@ steps:
     ls -la;
     pwd;
     cd build;
+    pwd;
     ls -la;
+    find .;
   displayName: 'Docker'
 
 - task: PublishBuildArtifacts@1
