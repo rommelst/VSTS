@@ -1,3 +1,3 @@
-add_executable(vsts
+add_executable(vsts_exe
     main.cpp
 )
