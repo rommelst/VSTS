@@ -26,8 +26,8 @@ steps:
     cd build;
     pwd;
     ls -la;
-    find .;
     ./CMakeFiles/3.17.0/CompilerIdCXX/a.out > out.txt;
+    find .;
     cat out.txt;
   displayName: 'Docker'
 
