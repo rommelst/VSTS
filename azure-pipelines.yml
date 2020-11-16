@@ -24,12 +24,18 @@ steps:
     cmake ..
   displayName: 'Compile and link'
 
+- task: CMake@1
+  inputs:
+    cmakeArgs: 
+
 - script: |
     echo "Assembly"
   displayName: 'Assembly'
 
 - script: |
     echo "Docker"
+    ls -la
+    pwd
   displayName: 'Docker'
 
 - task: PublishBuildArtifacts@1
@@ -38,4 +44,3 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
-- 
