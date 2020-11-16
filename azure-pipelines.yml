@@ -19,5 +19,15 @@ steps:
   displayName: 'Run a multi-line script'
 
 - script: |
-    CMake
+    mkdir build
+    cd build
+    cmake ..
   displayName: 'Compile and link'
+
+- script: |
+    echo "Assembly"
+  displayName: 'Assembly'
+
+- script: |
+    echo "Docker"
+  displayName: 'Docker'
