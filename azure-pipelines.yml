@@ -15,7 +15,8 @@ steps:
     dockerVersion: '17.09.0-ce'
 
 - script:
-    docker pull srzzumix/googletest
+    docker pull srzzumix/googletest;
+    docker ps -a;
   displayName: 'docker pull google test'
 
 
