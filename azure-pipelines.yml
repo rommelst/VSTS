@@ -27,6 +27,7 @@ steps:
     pwd;
     ls -la;
     find .;
+    ./src/CMakeFiles/CMakeDirectoryInformation.cmake;
   displayName: 'Docker'
 
 - task: PublishBuildArtifacts@1
