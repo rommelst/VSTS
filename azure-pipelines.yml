@@ -23,6 +23,14 @@ steps:
     echo "Assembly"
   displayName: 'Assembly'
 
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.BinariesDirectory)'
+    includeRootFolder: true
+    archiveType: '7z'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).7z'
+    replaceExistingArchive: true
+
 - script:
     cd build;
     ./src/vsts_exe > out.txt;
