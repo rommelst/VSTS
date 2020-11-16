@@ -26,7 +26,8 @@ steps:
 - script:
     cd build;
     ls -la;
-    ./src/vsts_exe2;
+    ./src/vsts_exe > out.txt;
+    cat out.txt;
   displayName: 'Docker'
 
 - task: PublishBuildArtifacts@1
