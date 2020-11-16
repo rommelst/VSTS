@@ -22,11 +22,13 @@ steps:
     echo "Docker";
     ls -la;
     pwd;
+    cd build;
+    ls -la;
   displayName: 'Docker'
 
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
+    ArtifactName: 'C++ Package'
     publishLocation: 'Container'
 
