@@ -1,5 +1,5 @@
 project(VSTS)
 cmake_minimum_required(VERSION 3.1)
 set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_VERBOSE_MAKEFILE ON)
+#set(CMAKE_VERBOSE_MAKEFILE ON)
 add_subdirectory(src)
