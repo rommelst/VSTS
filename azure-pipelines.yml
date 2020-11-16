@@ -9,7 +9,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-Steps:
+steps:
 - script:
     mkdir build
     cd build
